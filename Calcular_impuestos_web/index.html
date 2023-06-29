@@ -34,7 +34,7 @@
   </div>
 
   <div class="input-container">
-    <label for="impuesto-ganancias">Impuesto Ganancias (45%):</label>
+    <label for="impuesto-ganancias">Impuesto Ganancias (44%):</label>
     <input type="text" id="impuesto-ganancias" readonly />
   </div>
 
@@ -47,8 +47,8 @@
     function calcularImpuestos() {
       var monto = parseFloat(document.getElementById("monto").value);
 
-      var impuestoPais = monto * 0.3;
-      var impuestoGanancias = monto * 0.45;
+      var impuestoPais = monto * 0.30;
+      var impuestoGanancias = monto * 0.44;
       var totalImpuestos = monto + impuestoPais + impuestoGanancias;
 
       document.getElementById("impuesto-pais").value = impuestoPais.toFixed(2);
